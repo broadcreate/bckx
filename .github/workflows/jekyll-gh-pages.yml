@@ -61,7 +61,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: site
-          path: ./_site
+          path: ./
       - name: List contents of _site2
         run: |
               echo "Listing contents of _site directory"
