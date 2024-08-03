@@ -67,18 +67,7 @@ jobs:
               echo "Listing contents of _site directory"
               pwd
               ls -l
-              ls -la _site
-
-              
-      - name: List contents of _site3
-        run: |
-              echo "Listing contents of _site directory"
-              pwd
-              ls -l
-              ls -la _site
-          
-      
-
+             
       - name: Commit and push changes
         run: |
           git config --global user.name 'github-actions[bot]'
