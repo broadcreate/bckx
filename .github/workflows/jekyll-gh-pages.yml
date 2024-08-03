@@ -53,7 +53,7 @@ jobs:
               echo "Listing contents of _site directory"
               pwd
               ls -l
-              ls -la _site
+             
               
       - name: Download built site
         uses: actions/download-artifact@v2
