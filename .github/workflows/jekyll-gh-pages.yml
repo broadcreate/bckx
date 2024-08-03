@@ -29,6 +29,7 @@ jobs:
       - name: List contents of _site
         run: |
           echo "Listing contents of _site directory"
+          pwd
           ls -la _site
           
       - name: Upload artifact
