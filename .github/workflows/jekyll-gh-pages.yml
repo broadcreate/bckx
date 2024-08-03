@@ -26,7 +26,11 @@ jobs:
         with:
           source: ./
           destination: ./_site
-
+      - name: List contents of _site
+        run: |
+          echo "Listing contents of _site directory"
+          ls -la _site
+          
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
