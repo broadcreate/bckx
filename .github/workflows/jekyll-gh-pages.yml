@@ -54,7 +54,13 @@ jobs:
         with:
           name: site
           path: ./_site
-
+      - name: List contents of _site
+        run: |
+              echo "Listing contents of _site directory"
+              pwd
+              ls -l
+              ls -la _site
+          
       - name: Copy built site to gh-pages
         run: |
           pwd
