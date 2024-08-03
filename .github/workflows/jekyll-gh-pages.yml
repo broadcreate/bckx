@@ -51,7 +51,9 @@ jobs:
 
       - name: Copy built site to gh-pages
         run: |
+          pwd
           rm -rf ./*
+          pwd
           cp -r ./_site/* .
 
       - name: Commit and push changes
