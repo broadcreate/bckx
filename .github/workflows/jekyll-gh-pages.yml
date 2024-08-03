@@ -77,13 +77,7 @@ jobs:
               ls -l
               ls -la _site
           
-      - name: Copy built site to gh-pages
-        run: |
-          pwd
-          ls -l
-          rm -rf ./*
-          ls -l
-          cp -r ./_site/* .
+      
 
       - name: Commit and push changes
         run: |
